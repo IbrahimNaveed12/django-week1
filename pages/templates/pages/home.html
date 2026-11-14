@@ -1,2 +1,34 @@
-<h1>Home</h1>
-<p>{{ name }}</p>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <img src="{% static 'images/me.svg' %}" alt="Photo of Ibraheem" width="150">
+  <div>
+    <h1>Hi, I'm {{ name }}</h1>
+    <p>{{ role }} at COMSATS Lahore. I am learning Python and Django as a Django intern at Jamwah Studios.</p>
+    <a class="button" href="/projects/">View projects</a>
+  </div>
+</section>
+
+<section class="cards">
+  <!-- three project cards, written by hand -->
+  <div class="card">
+    <h3>Nexus Banking Platform</h3>
+    <p>A 3D banking dashboard. Built with GenAI and directed by me.</p>
+    <a href="https://ibrahimnaveed12.github.io/Nexus-Banking-System/">Live demo</a>
+  </div>
+  <div class="card">
+    <h3>Scientific Calculator</h3>
+    <p>My first GenAI project. Live on Vercel.</p>
+    <a href="https://calculator-pakistani.vercel.app/">Live demo</a>
+  </div>
+  <div class="card">
+    <h3>python-foundations</h3>
+    <p>Python practice programs that I wrote myself.</p>
+    <a href="https://github.com/IbrahimNaveed12/python-foundations">View repo</a>
+  </div>
+</section>
+{% endblock %}

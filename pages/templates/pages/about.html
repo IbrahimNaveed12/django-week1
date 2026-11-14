@@ -1,1 +1,44 @@
-<h1>About</h1>
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<main class="page-container">
+  <section>
+    <h2>About Me</h2>
+    <p>I am a first-semester BS Software Engineering student at COMSATS University Islamabad, Lahore Campus. I am building a strong base in programming and problem solving with C, C++, Java and Python. I write C, C++ and Java by hand. For larger web projects I also use GenAI tools and direct the work myself. Right now I am a Django intern at Jamwah Studios, where I work on web applications with Django and Python.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BS Software Engineering</strong>, COMSATS University Islamabad, Lahore Campus. 1st semester, started August 2026, expected graduation 2030. Courses: Programming Fundamentals (Java), Introduction to ICT, Applied Physics, Functional English.</li>
+      <li><strong>Intermediate in Computer Science (ICS)</strong>, Forman Christian College (FCCU), Lahore.</li>
+      <li><strong>Matriculation in Computer Science</strong>, The Punjab School, Lahore.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> C, C++, Java, Python, HTML, CSS</li>
+      <li><strong>Frameworks and libraries:</strong> Django (learning), SFML</li>
+      <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code, Windows</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certification</h2>
+    <ul>
+      <li>Introduction to Git, Microsoft Learn, September 2026.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Internship</h2>
+    <ul>
+      <li><strong>Django Intern, Jamwah Studios</strong>, 10 Nov to 10 Dec 2026, remote. Working on web applications with Django and Python. Mentor: Jamshed Ali. Week 1 builds this portfolio site.</li>
+    </ul>
+  </section>
+</main>
+{% endblock %}
