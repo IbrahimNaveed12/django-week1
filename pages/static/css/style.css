@@ -6,6 +6,10 @@ body {
   color: #333333;
 }
 
+a {
+  color: #2e7d32;
+}
+
 nav {
   background-color: #222222;
   display: flex;
@@ -77,6 +81,7 @@ nav .links a:hover {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   max-width: 960px;
   margin: 20px auto;
@@ -122,6 +127,8 @@ footer p {
   nav {
     flex-direction: column;
     align-items: flex-start;
+    padding: 15px 20px;
+    box-sizing: border-box;
   }
 
   nav .links {
@@ -137,9 +144,22 @@ footer p {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    margin: 20px 15px;
+    box-sizing: border-box;
+  }
+
+  .cards {
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .card {
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .page-container {
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 }
