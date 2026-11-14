@@ -68,7 +68,7 @@ When I open a page, the browser sends a request. `portfolio/urls.py` passes it t
 
 ## Note
 
-I used an AI assistant while building this project. I reviewed the code and I can explain how it works.
+I used an AI assistant as an helper while building this project so its self and ai both based. I reviewed the code and I can explain how it works.
 
 ## Author
 
