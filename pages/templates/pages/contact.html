@@ -1,2 +1,17 @@
-<h1>Contact</h1>
-<p>{{ email }}</p>
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<main class="page-container">
+  <h1>Contact</h1>
+  <p>You can reach me by email or find me on the following platforms:</p>
+
+  <ul>
+    <li>Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+    <li>GitHub: <a href="https://github.com/IbrahimNaveed12">https://github.com/IbrahimNaveed12</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-ibrahim-naveed/">https://www.linkedin.com/in/muhammad-ibrahim-naveed/</a></li>
+    <li>Instagram: <a href="https://instagram.com/mibraheemnaveed">@mibraheemnaveed</a></li>
+  </ul>
+</main>
+{% endblock %}
