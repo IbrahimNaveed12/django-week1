@@ -1,13 +1,31 @@
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f6f8;
   color: #333333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   color: #2e7d32;
+}
+
+a:focus,
+.button:focus,
+.button-outline:focus {
+  outline: 2px solid #1b5e20;
+  outline-offset: 2px;
+}
+
+section p,
+.home-section p,
+.page-container p {
+  max-width: 70ch;
 }
 
 nav {
@@ -38,7 +56,14 @@ nav .links a:hover {
 .page-container {
   max-width: 960px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 20px 40px;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
 }
 
 .hero {
@@ -51,16 +76,25 @@ nav .links a:hover {
   max-width: 960px;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
+  border-top: 4px solid #4caf50;
 }
 
 .hero img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .hero h1 {
   margin-top: 0;
+}
+
+.hero-buttons {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .button {
@@ -72,10 +106,64 @@ nav .links a:hover {
   border-radius: 5px;
   font-weight: bold;
   margin-top: 10px;
+  margin-right: 10px;
+  border: 2px solid #4caf50;
+  box-sizing: border-box;
 }
 
 .button:hover {
   background-color: #43a047;
+  border-color: #43a047;
+}
+
+.button-outline {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2e7d32;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 2px solid #4caf50;
+  box-sizing: border-box;
+}
+
+.button-outline:hover {
+  background-color: #e8f5e9;
+}
+
+.home-section {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.home-section .cards {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.chip {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 12px;
+  border-radius: 14px;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
 }
 
 .cards {
@@ -85,7 +173,7 @@ nav .links a:hover {
   gap: 20px;
   max-width: 960px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 20px 40px;
 }
 
 .card {
@@ -93,6 +181,15 @@ nav .links a:hover {
   border: 1px solid #dddddd;
   border-radius: 6px;
   padding: 20px;
+  width: 260px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-small {
   width: 260px;
   box-sizing: border-box;
 }
@@ -111,16 +208,54 @@ nav .links a:hover {
   text-decoration: underline;
 }
 
+.view-all-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.closing-strip {
+  background-color: #e8f5e9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.closing-strip-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.closing-strip-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #1b5e20;
+  font-weight: 500;
+}
+
 footer {
   background-color: #222222;
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 footer p {
   margin: 0;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -148,18 +283,40 @@ footer p {
     box-sizing: border-box;
   }
 
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .button,
+  .hero-buttons .button-outline {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .home-section {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
   .cards {
     padding: 0 15px;
     box-sizing: border-box;
   }
 
-  .card {
+  .card,
+  .card-small {
     width: 100%;
     box-sizing: border-box;
   }
 
   .page-container {
-    padding: 0 15px;
+    padding: 0 15px 40px;
     box-sizing: border-box;
+  }
+
+  .closing-strip {
+    padding: 30px 15px;
   }
 }

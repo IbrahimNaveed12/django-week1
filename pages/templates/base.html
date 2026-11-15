@@ -1,10 +1,12 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Muhammad Ibrahim Naveed, BS Software Engineering student and Django intern.">
   <title>{% block title %}My Portfolio{% endblock %}</title>
+  <link rel="icon" href="{% static 'images/me.jpg' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
@@ -24,6 +26,11 @@
 
   <footer>
     <p>Muhammad Ibrahim Naveed | COMSATS Lahore | Django Internship 2026</p>
+    <div class="footer-links">
+      <a href="https://github.com/IbrahimNaveed12">GitHub</a>
+      <a href="https://www.linkedin.com/in/muhammad-ibrahim-naveed/">LinkedIn</a>
+      <a href="mailto:ibrahimnaveed00@gmail.com">Email</a>
+    </div>
   </footer>
 
 </body>
