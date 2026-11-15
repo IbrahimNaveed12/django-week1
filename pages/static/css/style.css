@@ -4,6 +4,9 @@ body {
   padding: 0;
   background-color: #f4f6f8;
   color: #333333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -38,7 +41,7 @@ nav .links a:hover {
 .page-container {
   max-width: 960px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 20px 40px;
 }
 
 .hero {
@@ -85,7 +88,7 @@ nav .links a:hover {
   gap: 20px;
   max-width: 960px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 20px 40px;
 }
 
 .card {
@@ -116,11 +119,25 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 footer p {
   margin: 0;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
