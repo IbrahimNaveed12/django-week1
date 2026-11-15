@@ -8,27 +8,77 @@
   <img src="{% static 'images/me.jpg' %}" alt="Photo of Ibraheem" width="150">
   <div>
     <h1>Hi, I'm {{ name }}</h1>
-    <p>{{ role }} at COMSATS Lahore. I am learning Python and Django as a Django intern at Jamwah Studios.</p>
-    <a class="button" href="/projects/">View projects</a>
+    <p>{{ role }} at COMSATS Lahore.</p>
+    <p>I am building a strong base in programming and problem solving with C, C++, Java and Python. Right now I am learning Django as an intern at Jamwah Studios and building my first web projects.</p>
+    <div class="hero-buttons">
+      <a class="button" href="/projects/">View projects</a>
+      <a class="button" href="/contact/">Contact me</a>
+      <a class="button button-outline" href="https://github.com/IbrahimNaveed12">GitHub</a>
+    </div>
   </div>
 </section>
 
-<section class="cards">
-  <!-- three project cards, written by hand -->
-  <div class="card">
-    <h3>Nexus Banking Platform</h3>
-    <p>A modern 3D banking dashboard with an interactive interface.</p>
-    <a href="https://ibrahimnaveed12.github.io/Nexus-Banking-System/">Live demo</a>
+<section class="home-section">
+  <h2>What I am doing now</h2>
+  <div class="cards">
+    <div class="card card-small">
+      <h3>Django internship</h3>
+      <p>Django Intern at Jamwah Studios, 10 Nov to 10 Dec 2026. Week 1 is this portfolio website.</p>
+    </div>
+    <div class="card card-small">
+      <h3>Learning Python</h3>
+      <p>I practise in my python-foundations repository on GitHub.</p>
+    </div>
+    <div class="card card-small">
+      <h3>BS Software Engineering</h3>
+      <p>First semester at COMSATS Lahore. Courses: Programming Fundamentals (Java), Introduction to ICT, Applied Physics and Functional English.</p>
+    </div>
   </div>
-  <div class="card">
-    <h3>Scientific Calculator</h3>
-    <p>Scientific calculator application, live on Vercel.</p>
-    <a href="https://calculator-pakistani.vercel.app/">Live demo</a>
+</section>
+
+<section class="home-section">
+  <h2>Skills</h2>
+  <div class="chips-container">
+    <span class="chip">C</span>
+    <span class="chip">C++</span>
+    <span class="chip">Java</span>
+    <span class="chip">Python</span>
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">Git</span>
+    <span class="chip">GitHub</span>
+    <span class="chip">Django (learning)</span>
   </div>
-  <div class="card">
-    <h3>python-foundations</h3>
-    <p>Python practice programs and problem-solving exercises.</p>
-    <a href="https://github.com/IbrahimNaveed12/python-foundations">View repo</a>
+</section>
+
+<section class="home-section">
+  <h2>Featured projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Nexus Banking Platform</h3>
+      <p>A modern 3D banking dashboard with an interactive interface.</p>
+      <a href="https://ibrahimnaveed12.github.io/Nexus-Banking-System/">Live demo</a>
+    </div>
+    <div class="card">
+      <h3>Scientific Calculator</h3>
+      <p>Scientific calculator application, live on Vercel.</p>
+      <a href="https://calculator-pakistani.vercel.app/">Live demo</a>
+    </div>
+    <div class="card">
+      <h3>python-foundations</h3>
+      <p>Python practice programs and problem-solving exercises.</p>
+      <a href="https://github.com/IbrahimNaveed12/python-foundations">View repo</a>
+    </div>
+  </div>
+  <div class="view-all-container">
+    <a class="button" href="/projects/">View all projects</a>
+  </div>
+</section>
+
+<section class="closing-strip">
+  <div class="closing-strip-content">
+    <p>Want to work together or just say hello? I am open to collaboration, study groups and hackathons.</p>
+    <a class="button" href="/contact/">Contact me</a>
   </div>
 </section>
 {% endblock %}
